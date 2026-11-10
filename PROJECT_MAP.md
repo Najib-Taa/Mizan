@@ -1,0 +1,1 @@
+<!-- Mémoire architecturale du projet -->
