@@ -91,10 +91,6 @@ L'API peut renvoyer des données périmées ou indisponibles. L'interface signal
 6. Tester le calcul avec un poids positif, zéro, vide, négatif et non numérique. Le zéro est accepté ; les champs vides, négatifs et non numériques sont refusés.
 7. Couper le réseau dans les DevTools et vérifier le message d'erreur puis « Réessayer ».
 
-## État des tests
-
-La réponse spot dans `samples/prices-reponse.json` et la réponse de découverte `/history` dans `samples/history-reponse.json` proviennent des essais API précédents. L'application utilise désormais `/chart` pour obtenir l'historique des deux métaux. La syntaxe et les fonctions pures ont été vérifiées localement. La validation d'intégration en navigateur avec les endpoints `/chart`, les états réseau et les captures reste à effectuer.
-
 ## Captures d'écran
 
 ### Succès
