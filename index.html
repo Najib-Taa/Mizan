@@ -1,0 +1,97 @@
+<!-- Structure de base de la façade -->
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultez les cours de l'or et de l'argent et estimez la valeur d'un bijou.">
+  <title>Mizan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">MIZAN</a>
+
+    <label class="currency-control" for="currency-select">
+      Devise
+      <select id="currency-select">
+        <option value="MAD">MAD</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+    </label>
+  </header>
+
+  <main class="container">
+    <section class="section" aria-labelledby="prices-title">
+      <div class="section-heading">
+        <h1 id="prices-title">Prix actuels</h1>
+        <button id="refresh-button" class="button" type="button">Actualiser</button>
+      </div>
+
+      <p id="status-message" class="status" role="status">Chargement des cours…</p>
+      <p id="updated-at" class="updated-at">En attente des données…</p>
+      <div id="price-cards" class="price-grid"></div>
+      <button id="retry-button" class="button" type="button" hidden>Réessayer</button>
+    </section>
+
+    <section class="section" aria-labelledby="history-title">
+      <div class="section-heading">
+        <h2 id="history-title">Historique des prix</h2>
+
+        <div class="history-controls">
+          <label for="history-metal">
+            Métal
+            <select id="history-metal">
+              <option value="gold">Or</option>
+              <option value="silver">Argent</option>
+            </select>
+          </label>
+
+          <label for="history-period">
+            Période
+            <select id="history-period">
+              <option value="7">7 jours</option>
+              <option value="30">30 jours</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <p id="history-status" class="status" role="status">Chargement de l'historique…</p>
+      <div id="history-chart" class="chart" aria-label="Graphique historique des prix"></div>
+    </section>
+
+    <section class="section calculator-section" aria-labelledby="calculator-title">
+      <h2 id="calculator-title">Estimateur de bijou</h2>
+
+      <form id="calculator-form" class="calculator-form" novalidate>
+        <label for="weight-input">
+          Poids (grammes)
+          <input id="weight-input" name="weight" type="number" min="0" step="any" placeholder="Ex. 12.5" required>
+        </label>
+
+        <label for="calculator-metal">
+          Métal
+          <select id="calculator-metal" name="metal">
+            <option value="gold">Or</option>
+            <option value="silver">Argent</option>
+          </select>
+        </label>
+
+        <button class="button button-dark" type="submit">Calculer</button>
+      </form>
+
+      <p id="calculator-error" class="field-error" role="alert"></p>
+      <p id="calculator-result" class="calculator-result" aria-live="polite">Saisissez un poids pour obtenir une estimation.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footer-titre"><b>Mizan</b></p>
+    <p><b>&copy;2026 Mizan. Tous droits réservés</b></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "symbol": "XAUUSD",
+  "interval": "daily",
+  "currency": "USD",
+  "unit": "troy_oz",
+  "points": [
+    {
+      "d": "2026-11-09",
+      "c": 4114.5,
+      "h": 4157.7,
+      "l": 4062.5
+    },
+    {
+      "d": "2026-11-10",
+      "c": 4084.4,
+      "h": 4156.2,
+      "l": 4076.2
+    }
+  ],
+  "count": 2,
+  "high_52w": 5318.4,
+  "low_52w": 3898.9,
+  "ranges": {
+    "day": {
+      "low": 4076.2,
+      "high": 4156.2
+    },
+    "week": {
+      "low": 3904.1,
+      "high": 4157.7
+    },
+    "month": {
+      "low": 3879.3,
+      "high": 4242.3
+    },
+    "year": {
+      "low": 3879.3,
+      "high": 5586.2
+    }
+  },
+  "return_1y_pct": -0.91,
+  "return_ytd_pct": -5.91,
+  "updated_at": "2026-11-10T13:15:58.238Z",
+  "data_state": {
+    "status": "fresh",
+    "as_of": "2026-11-10T13:15:58.238Z",
+    "source": "upstream",
+    "age_seconds": 0
+  },
+  "source": "xaus.com",
+  "price_source": "xaus.com",
+  "docs": "https://xaus.com/api"
+}
